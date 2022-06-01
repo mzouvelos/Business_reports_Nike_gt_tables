@@ -86,8 +86,8 @@ combine_word <- function(factory_name, nike_inc_brand_s, factory_type, product_t
 }
 
 # Correcting some foreign character names
-factory_female_perc[factory_female_perc == "Calçados Hammes Ltda."] <- "Calcados Hammes Ltda."	
-factory_female_perc[factory_female_perc == "Thomas E Goergen Atelier De Calçados Ltda Me"] <- "Thomas E Goergen Atelier De Calcados Ltda Me"
+factory_female_perc[factory_female_perc == "CalÃ§ados Hammes Ltda."] <- "Calcados Hammes Ltda."	
+factory_female_perc[factory_female_perc == "Thomas E Goergen Atelier De CalÃ§ados Ltda Me"] <- "Thomas E Goergen Atelier De Calcados Ltda Me"
 
 # Creating percentage for line workeers and formatting it
 factory_female_perc$line_workers_perc <- round((factory_female_perc$line_workers/factory_female_perc$total_workers),3)*100
